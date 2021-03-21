@@ -1,24 +1,129 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="grid-container">
+      <header className="row">
+        <div>
+          <a className="brand" href="index.html">Shopping Site</a>
+        </div>
+        <div>
+          <a href="cart.html">Cart</a>
+          <a href="signin.html">Sign In</a>
+        </div>
       </header>
+      <main>
+        <div>
+          <div className="row center"> 
+              <div className="card">
+                <a href="product.html">
+                  <img className="medium" src="./images/product1.jpeg" alt="product">
+                </a>
+              <div className="card-body">
+                <a href="product.html">
+                  <h2>Better Sweater Fleece Jacket</h2>
+                </a>
+                <div className="rating">
+                  <span><i className="fa fa-star"></i></span>
+                  <span><i className="fa fa-star"></i></span>
+                  <span><i className="fa fa-star"></i></span>
+                  <span><i className="fa fa-star"></i></span>                             
+                </div>
+                <div className="price">$120</div>
+              </div>      
+            </div>
+            <div className="card">
+              <a href="product.html">
+                                <img class="medium" src="./images/product1.jpeg" alt="product">
+                            </a>
+                            <div class="card-body">
+                                <a href="product.html">
+                                    <h2>Better Sweater Fleece Jacket</h2>
+                                </a>
+                                <div class="rating">
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>                             
+                                </div>
+                                <div class="price">$120</div>
+                            </div>      
+                        </div>
+                    <div class="card">
+                        <a href="product.html">
+                            <img class="medium" src="./images/product1.jpeg" alt="product">
+                        </a>
+                        <div class="card-body">
+                            <a href="product.html">
+                                <h2>Better Sweater Fleece Jacket</h2>
+                            </a>
+                            <div class="rating">
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>                             
+                            </div>
+                            <div class="price">$120</div>
+                        </div>      
+                    </div>
+                    <div class="card">
+                        <a href="product.html">
+                            <img class="medium" src="./images/product1.jpeg" alt="product">
+                        </a>
+                        <div class="card-body">
+                            <a href="product.html">
+                                <h2>Better Sweater Fleece Jacket</h2>
+                            </a>
+                            <div class="rating">
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>                             
+                            </div>
+                            <div class="price">$120</div>
+                        </div>      
+                    </div>
+                    <div class="card">
+                        <a href="product.html">
+                            <img class="medium" src="./images/product1.jpeg" alt="product">
+                        </a>
+                        <div class="card-body">
+                            <a href="product.html">
+                                <h2>Better Sweater Fleece Jacket</h2>
+                            </a>
+                            <div class="rating">
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>                             
+                            </div>
+                            <div class="price">$120</div>
+                        </div>      
+                    </div>
+                    <div class="card">
+                        <a href="product.html">
+                            <img class="medium" src="./images/product1.jpeg" alt="product">
+                        </a>
+                        <div class="card-body">
+                            <a href="product.html">
+                                <h2>Better Sweater Fleece Jacket</h2>
+                            </a>
+                            <div class="rating">
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>                             
+                            </div>
+                            <div class="price">$120</div>
+                        </div>      
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+        <footer class="row center">All right reserved.</footer>
     </div>
+
   );
 }
 

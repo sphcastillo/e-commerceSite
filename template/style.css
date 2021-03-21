@@ -83,6 +83,8 @@ img {
 img.medium {
   max-width: 29rem;
   width: 100%;
+  width: 680px;
+  height: 830px;
 }
 
 /* Card */
