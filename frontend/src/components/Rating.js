@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default function Rating(props) {
     const {rating, numReviews} = props;
     return (
@@ -54,6 +55,9 @@ export default function Rating(props) {
                             : "fa fa-star-o"
                         }>
                     </i>
+                </span>
+                <span>
+                    {numReviews + ' reviews'}
                 </span>                          
             </div>            
         </div>
