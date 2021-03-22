@@ -1,4 +1,5 @@
 import React from "react";
+import product1 from "./images/product1.jpeg";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <div className="row center"> 
             <div className="card">
               <a href="product.html">
-                <img className="medium" src={} alt="product"/>
+                <img className="medium" src={product1} alt="product"/>
               </a>
               <div className="card-body">
                 <a href="product.html">
@@ -34,7 +35,7 @@ function App() {
             </div>    
             <div className="card">
               <a href="product.html">
-                <img className="medium" src={} alt="product"/>
+                <img className="medium" src={product1} alt="product"/>
               </a>
               <div className="card-body">
                 <a href="product.html">
@@ -51,7 +52,7 @@ function App() {
             </div> 
             <div className="card">
               <a href="product.html">
-                <img className="medium" src={} alt="product"/>
+                <img className="medium" src={product1} alt="product"/>
               </a>
               <div className="card-body">
                 <a href="product.html">
@@ -68,7 +69,7 @@ function App() {
             </div> 
             <div className="card">
               <a href="product.html">
-                <img className="medium" src={} alt="product"/>
+                <img className="medium" src={product1} alt="product"/>
               </a>
               <div className="card-body">
                 <a href="product.html">
@@ -85,7 +86,7 @@ function App() {
             </div> 
             <div className="card">
               <a href="product.html">
-                <img className="medium" src={} alt="product"/>
+                <img className="medium" src={product1} alt="product"/>
               </a>
               <div className="card-body">
                 <a href="product.html">
@@ -102,7 +103,7 @@ function App() {
             </div> 
             <div className="card">
               <a href="product.html">
-                <img className="medium" src={} alt="product"/>
+                <img className="medium" src={product1} alt="product"/>
               </a>
               <div className="card-body">
                 <a href="product.html">
