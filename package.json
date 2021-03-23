@@ -1,5 +1,6 @@
 {
   "name": "e-commercesite",
+  "type": "module",
   "version": "1.0.0",
   "description": "MERN Stack",
   "main": "index.js",
