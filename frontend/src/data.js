@@ -1,3 +1,9 @@
+import img1 from './images/product1.jpeg'
+import img2 from './images/product2.jpeg'
+import img3 from './images/product3.jpeg'
+import img4 from './images/product4.jpeg'
+import img5 from './images/product5.jpeg'
+import img6 from './images/product6.jpeg'
 
 const data = {
     products: [
@@ -5,8 +11,9 @@ const data = {
             _id: "1",
             name: "Better Sweater Fleece Jacket",
             category: "Fleece",
-            image: "./images/product1.jpeg",
+            image: img1,
             price: 139,
+            countInStock: 10,
             brand:"Patagonia",
             rating: "4.5",
             numReviews: 245,
@@ -16,8 +23,9 @@ const data = {
             _id: "2",
             name: "Mount Airy Scoop Tank",
             category: "T-Shirts",
-            image: "./images/product2.jpeg",
+            image: img2,
             price: 29,
+            countInStock: 20,
             brand:"Patagonia",
             rating: "4",
             numReviews: 26,
@@ -27,8 +35,9 @@ const data = {
             _id: "3",
             name: "Regenerative Pilot Crewneck Sweatshirt",
             category: "Sweatshirts & Hoodies",
-            image: "images/product3.jpeg",
+            image: img3,
             price: 69,
+            countInStock: 0,
             brand:"Patagonia",
             rating: "4.5",
             numReviews: 10,
@@ -38,8 +47,9 @@ const data = {
             _id: "4",
             name: "Garden Island Shorts -4",
             category: "Shorts",
-            image: "./images/product4.jpeg",
+            image: img4,
             price: 65,
+            countInStock: 15,
             brand:"Patagonia",
             rating: "4",
             numReviews: 21,
@@ -49,8 +59,9 @@ const data = {
             _id: "5",
             name: "Fleetwith Romper",
             category: "Dresses & Skirts",
-            image: "./images/product5.jpeg",
+            image: img5,
             price: 119,
+            countInStock: 5,
             brand: "Patagonia",
             rating: "4.5",
             numReviews: 326,
@@ -60,8 +71,9 @@ const data = {
             _id: "6",
             name: "Fitz Roy Far Out",
             category: "T-Shirts",
-            image: "./images/product6.jpeg",
+            image: img6,
             price: 45,
+            countInStock: 12,
             brand:"Patagonia",
             rating: "4.9",
             numReviews: 71,
