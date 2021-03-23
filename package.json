@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sphcastillo/e-commerceSite/issues"
   },
-  "homepage": "https://github.com/sphcastillo/e-commerceSite#readme"
+  "homepage": "https://github.com/sphcastillo/e-commerceSite#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
