@@ -1,11 +1,11 @@
 
-
 const data = {
     products: [
         {
             _id: "1",
             name: "Better Sweater Fleece Jacket",
             category: "Fleece",
+            image: 'product1',
             price: 139,
             countInStock: 10,
             brand:"Patagonia",
@@ -17,6 +17,7 @@ const data = {
             _id: "2",
             name: "Mount Airy Scoop Tank",
             category: "T-Shirts",
+            image: 'product2',
             price: 29,
             countInStock: 20,
             brand:"Patagonia",
@@ -28,6 +29,7 @@ const data = {
             _id: "3",
             name: "Regenerative Pilot Crewneck Sweatshirt",
             category: "Sweatshirts & Hoodies",
+            image: 'product3',
             price: 69,
             countInStock: 0,
             brand:"Patagonia",
@@ -39,6 +41,7 @@ const data = {
             _id: "4",
             name: "Garden Island Shorts -4",
             category: "Shorts",
+            image: 'product4',
             price: 65,
             countInStock: 15,
             brand:"Patagonia",
@@ -50,6 +53,7 @@ const data = {
             _id: "5",
             name: "Fleetwith Romper",
             category: "Dresses & Skirts",
+            image: 'product5',
             price: 119,
             countInStock: 5,
             brand: "Patagonia",
@@ -61,6 +65,7 @@ const data = {
             _id: "6",
             name: "Fitz Roy Far Out",
             category: "T-Shirts",
+            image: 'product6',
             price: 45,
             countInStock: 12,
             brand:"Patagonia",
