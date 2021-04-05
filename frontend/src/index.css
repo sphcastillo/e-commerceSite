@@ -179,7 +179,7 @@ margin: 0.1rem;
   color: #20a020;
 }
 
-.error {
+.danger {
   color: #a02020;
 }
 
@@ -194,7 +194,7 @@ margin: 0.1rem;
   background-color: #e0e0ff;
 }
 
-.alert-error {
+.alert-danger {
   color: #a02020;
   background-color: #ffe0e0e0;
 }
