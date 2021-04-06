@@ -6,6 +6,21 @@ import Rating from '../components/Rating';
 import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
 
+import product1 from '../images/product1.jpeg';
+import product2 from '../images/product2.jpeg';
+import product3 from '../images/product3.jpeg';
+import product4 from '../images/product4.jpeg';
+import product5 from '../images/product5.jpeg';
+import product6 from '../images/product6.jpeg';
+
+const assets = {
+    product1,
+    product2,
+    product3,
+    product4,
+    product5,
+    product6
+  }
 
 export default function ProductScreen(props) {
     const dispatch = useDispatch();
