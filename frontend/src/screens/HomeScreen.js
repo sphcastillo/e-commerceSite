@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect } from 'react';
+
 import Product from "../components/Product";
 import product1 from '../images/product1.jpeg';
 import product2 from '../images/product2.jpeg';
@@ -9,6 +9,7 @@ import product5 from '../images/product5.jpeg';
 import product6 from '../images/product6.jpeg';
 import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
+import { useSelector } from 'react-redux';
 
 const assets = {
   product1,
@@ -21,24 +22,12 @@ const assets = {
 
 
 export default function HomeScreen() {
-
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+const dispath = useDispatch();
+const productList = useSelector((state) => state.productList);
+const { loading, error, products } = productList;
 
   useEffect(() => {
-    const fetchData = async () => {
-      try{
-        setLoading(true);
-        const { data } = await axios.get('/api/products');
-        setLoading(false);
-        setProducts(data);
-      }catch(err){
-        setError(err.message);
-        setLoading(false);
-      }
-    };
-    fetchData();
+    dispatch(listProducts());
   }, [])
 
 
