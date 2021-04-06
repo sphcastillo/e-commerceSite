@@ -9,7 +9,8 @@ import product5 from '../images/product5.jpeg';
 import product6 from '../images/product6.jpeg';
 import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import {listProducts } from "../actions/productActions";
 
 const assets = {
   product1,
@@ -22,7 +23,7 @@ const assets = {
 
 
 export default function HomeScreen() {
-const dispath = useDispatch();
+const dispatch = useDispatch();
 const productList = useSelector((state) => state.productList);
 const { loading, error, products } = productList;
 
