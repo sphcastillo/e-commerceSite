@@ -32,6 +32,10 @@ export default function ProductScreen(props) {
         dispatch(detailsProduct(productId));
     }, [dispatch, productId]);
 
+    useEffect(()=> {
+        console.log(product)
+    }, [product])
+
     return (
         <div>
         {loading ? (
@@ -45,7 +49,7 @@ export default function ProductScreen(props) {
                     <div className="col-2">
                         <img 
                             className="large" 
-                            src={product.image} 
+                            src={assets[product.image]} 
                             alt={product.name}
                         ></img>
                     </div>
