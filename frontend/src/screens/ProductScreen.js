@@ -25,7 +25,7 @@ const assets = {
 export default function ProductScreen(props) {
     const dispatch = useDispatch();
     const productId = props.match.params.id;
-    const productDetails = useSelector( state => state.productDetails);
+    const productDetails = useSelector( (state) => state.productDetails);
     const { loading, error, product } = productDetails;
 
     useEffect(() => {
