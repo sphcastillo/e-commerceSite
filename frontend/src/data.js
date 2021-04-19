@@ -37,7 +37,7 @@ const data = {
             category: "Sweatshirts & Hoodies",
             image: img3,
             price: 69,
-            countInStock: 0,
+            countInStock: 5,
             brand:"Patagonia",
             rating: "4.5",
             numReviews: 10,
