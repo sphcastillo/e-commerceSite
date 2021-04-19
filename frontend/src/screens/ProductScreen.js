@@ -37,8 +37,8 @@ export default function ProductScreen(props) {
         console.log(product)
     }, [product])
 
-    const  addToCartHandler = () => {
-        props.history.push(`/cart/${productId}?qty={qty}`);
+    const addToCartHandler = () => {
+        props.history.push(`/cart/${productId}?qty=${qty}`);
     }
 
     return (
