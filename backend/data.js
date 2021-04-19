@@ -1,5 +1,12 @@
 
 const data = {
+    users: [
+        {
+            name: 'Sophia',
+            email: 'sphcastillo@gmail.com',
+            password: bcrypt.hashAsync('101909Joey', 8)
+        }
+    ],
     products: [
         {
             _id: "1",
