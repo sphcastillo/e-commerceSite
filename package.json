@@ -1,36 +1,25 @@
 {
-  "name": "e-commercesite",
+  "name": "with-redux-toolkit",
   "version": "1.0.0",
-  "description": "MERN Stack",
-  "main": "index.js",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node index.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd frontend && npm run start",
-    "install": "cd frontend && npm install",
-    "build": "cd frontend && npm run build"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sphcastillo/e-commerceSite.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sphcastillo/e-commerceSite/issues"
-  },
-  "homepage": "https://github.com/sphcastillo/e-commerceSite#readme",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "concurrently": "^6.0.2",
-    "express": "^4.17.1",
-    "if-env": "^1.0.4",
-    "mongoose": "^5.12.5",
-    "nodemon": "^2.0.7",
-    "path": "^0.12.7"
+    "@reduxjs/toolkit": "1.5.0",
+    "next": "latest",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-redux": "7.2.2",
+    "@tailwindcss/line-clamp": "^0.2.0",
+    "firebase": "^8.6.1",
+    "firebase-admin": "^9.8.0"
   },
+  "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.23.0"
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.15",
+    "tailwindcss": "^2.1.2"
   }
 }
