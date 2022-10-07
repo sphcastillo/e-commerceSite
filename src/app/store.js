@@ -6,3 +6,5 @@ export const store = configureStore({
     basket: basketReducer,
   },
 });
+
+// to set up REDUX
