@@ -8,7 +8,13 @@ export const basketSlice = createSlice({
   name: "basket",
   initialState,
   reducers: {
-    addToBasket: (state, action) => {},
+    // Actions
+    addToBasket: (state, action) => {
+      //...state.items = copying the current store
+      // action.payload = the product that we are adding to the basket
+      // payload contains the product that we are passing in
+      state.items = [...state.items, action.payload];
+    },
     removeFromBasket: (state, action) => {},
   },
 });
