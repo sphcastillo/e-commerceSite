@@ -23,6 +23,20 @@ function Product({ id, title, price, description, category, image }) {
         setHasPrime(Math.random() < 0.5);
     }, []);
 
+    const addItemToBasket = () => {
+        dispatch(
+            addToBasket({
+                id,
+                title,
+                price,
+                rating,
+                description,
+                category,
+                image,
+                hasPrime,
+            })
+        );
+    };
 
     return (
         <div className='relative flex flex-col m-5 bg-white z-30 p-10'>
@@ -53,7 +67,10 @@ function Product({ id, title, price, description, category, image }) {
                 <p className='text-xs text-gray-500'>FREE Next-day Delivery</p>
             </div>
             )}
-            <button className="mt-auto button">Add to Basket</button>
+            <button 
+                className="mt-auto button"
+                onClick={addItemToBasket}
+            >Add to Basket</button>
 
 
         </div>
