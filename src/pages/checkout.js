@@ -2,10 +2,11 @@ import React from 'react';
 import Header from '../components/Header';
 import Image from "next/image";
 import { useSelector } from 'react-redux';
-import { selectItems } from '../slices/basketSlice';
+import { selectItems } from '../slices/basketSlice';    
+import CheckoutProduct from '../components/CheckoutProduct';
 
 function Checkout() {
-
+    // pulling items from the global store
     const items = useSelector(selectItems);
 
     return (
@@ -26,6 +27,20 @@ function Checkout() {
                             {items.length === 0 ? "Your Amazon Basket is empty." 
                             : "Shopping Basket"}
                         </h1>
+
+                        {items.map((item, i) => (
+                            <CheckoutProduct 
+                                key={i}
+                                id={item.id}
+                                title={item.title}
+                                price={item.price}
+                                rating={item.rating}
+                                description={item.description}
+                                category={item.category}
+                                image={item.image}
+                                hasPrime={item.hasPrime}
+                                />
+                        ))}
                     </div>
                 </div>
 
