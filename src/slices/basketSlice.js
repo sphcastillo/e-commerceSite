@@ -10,7 +10,7 @@ export const basketSlice = createSlice({
   reducers: {
     // Actions
     addToBasket: (state, action) => {
-      //...state.items = copying the current store
+      //...state.items = copying the current store (whatever is in the basket)
       // action.payload = the product that we are adding to the basket
       // payload contains the product that we are passing in
       state.items = [...state.items, action.payload];
