@@ -37,7 +37,7 @@ function CheckoutProduct({
     const removeItemFromBasket = () => {
         // pass in as an argument the id as an object
         // remove item from redux store
-        dispatch(removeFromBasket({ id  }))
+        dispatch(removeFromBasket({ id }))
     };
 
     return (
