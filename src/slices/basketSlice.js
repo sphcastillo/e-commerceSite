@@ -5,6 +5,7 @@ const initialState = {
 };
 
 export const basketSlice = createSlice({
+  
   name: "basket",
   initialState,
   reducers: {
