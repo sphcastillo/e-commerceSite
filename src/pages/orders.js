@@ -2,7 +2,9 @@ import React from 'react';
 
 function Orders() {
     return (
-        <div>Now showing ... new orders</div>
+        <div>
+            <h1>Is this working?</h1>
+        </div>
     )
 }
 
