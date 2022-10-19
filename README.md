@@ -1,28 +1,35 @@
-# Installation Steps
+# Amazon Clone - ecommerce website with Stripe
+
+## Description
+
+
+## Requirements
 
 
 
-## Using npm
 
-Run commands
-
-1) ```npm install```
+## Technologies & Methods Used
 
 
-2) ```npm run dev```
+
+## Github Repository
 
 
-## Or using yarn
 
-Run commands 
-
-1) ```npm install --global yarn```
-
-2) ```yarn install```
-
-3) ```yarn run dev```
+## Deployed Site
 
 
-### If you see the window below then you are set to build AMAZON 2.0!
 
-![Template Screenshot](TemplateScreenshot.jpg?raw=true "Template Screenshot")
+## More info
+
+Author: Sophia Castillo,
+
+Email: Sphcastillo@gmail.com,
+
+Professional website: www.builtbysophia.com,
+
+GitHub: https://github.com/sphcastillo,
+
+LinkedIn: https://www.linkedin.com/in/sophia-castillo-b89124133/
+
+
