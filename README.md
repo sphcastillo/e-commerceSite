@@ -5,7 +5,7 @@
 
 ## Requirements
 
-
+@heroicons/react, react-responsive-carousel, react-currency-formatter, next-auth, firebase
 
 
 ## Technologies & Methods Used
