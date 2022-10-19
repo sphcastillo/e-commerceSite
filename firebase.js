@@ -1,12 +1,12 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBY98rxRGDxP-_Aryp-VU47br-dI2UdHIs",
-    authDomain: "ecommerce-e2c5a.firebaseapp.com",
-    projectId: "ecommerce-e2c5a",
-    storageBucket: "ecommerce-e2c5a.appspot.com",
-    messagingSenderId: "65601590925",
-    appId: "1:65601590925:web:aeb89594eafda5fa93f4c4"
+    apiKey: "AIzaSyC2R_b8nySoyy0ljC1JzrNWla3Tz7Ye0pA",
+    authDomain: "ecommerce-withstripe.firebaseapp.com",
+    projectId: "ecommerce-withstripe",
+    storageBucket: "ecommerce-withstripe.appspot.com",
+    messagingSenderId: "769265959282",
+    appId: "1:769265959282:web:0aacb02c2746850d4dddeb"
 };
 
 
