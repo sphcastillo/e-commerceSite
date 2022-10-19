@@ -10,7 +10,7 @@
 
 ## Technologies & Methods Used
 
-
+REACT, NEXT.JS, FIREBASE, STRIPE, NEXT-AUTH, VERCEL
 
 ## Github Repository
 
