@@ -2,6 +2,8 @@
 
 ## Description
 
+This is a clone of Amazon ecommerce website. It is built with React, Redux, and Firebase. It uses Stripe for payments.
+
 
 ## Requirements
 
