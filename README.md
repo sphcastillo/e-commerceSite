@@ -20,7 +20,7 @@ https://github.com/sphcastillo/e-commerceSite
 
 ## Deployed Site
 
-https://www.sophcastillo.com
+https://amazonclone-e-commerce-withstripe.vercel.app
 
 ## More info
 
