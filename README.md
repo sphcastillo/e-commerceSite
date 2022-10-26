@@ -20,7 +20,7 @@ https://github.com/sphcastillo/e-commerceSite
 
 ## Deployed Site
 
-https://amazonclone-e-commerce-withstripe.vercel.app
+https://www.mapoutyourworld.com
 
 ## More info
 
