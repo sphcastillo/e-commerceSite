@@ -9,24 +9,46 @@ export default async (req, res) => {
     console.log("items: ", items);
     console.log("email: ", email);
 
-
-    };
+    const transformedItems = items.map((item) => ({
+        price_data: {
+            currency: 'usd',
+            unit_amount: item.price * 100,
+            product_data: {
+                name: item.title,
+                images: [item.image],
+                description: item.description,
+            }
+        },
+        quantity: 1,
+    }));
 
     const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
-        shipping_rates: ['shr_1J5FZoK9ZuKjBQ5R8uV7wz5m'],
         shipping_address_collection: {
-            allowed_countries: ['US', 'CA'],
+            allowed_countries: ['GB', "US", "CA"],
         },
+        shipping_options: [
+            {
+                shipping_rate_data: {
+                    type:"fixed_amount",
+                    fixed_amount: {
+                        amount: 18 * 100,
+                        currency: "usd",
+                    },
+                    display_name: 'USPS Ground - $18.00 USD'
+                }
+            }
+        ],
         line_items: transformedItems,
         mode: 'payment',
         success_url: `${process.env.HOST}/success`,
         cancel_url: `${process.env.HOST}/checkout`,
-        metadata: {
+        metadata:{
             email,
             images: JSON.stringify(items.map((item) => item.image)),
         },
     });
-
+    
     res.status(200).json({ id: session.id });
+
 };
