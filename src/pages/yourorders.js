@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import { getSession, useSession } from "next-auth/react";
 import db from "../../firebase";
 import moment from "moment";
+import Order from '../components/Order';
 
 function YourOrders({ orders }) {
 
@@ -23,7 +24,19 @@ function YourOrders({ orders }) {
                 )}
 
                 <div className="mt-5 space-y-4">
-
+                    {orders?.map(
+                        ({ id, amount, amountShipping, items, timestamp, images})  =>  (
+                            <Order 
+                                key={id}
+                                id={id}
+                                amount={amount}
+                                amountShipping={amountShipping}
+                                items={items}
+                                timestamp={timestamp}
+                                images={images}
+                            />
+                        )
+                    )}
                 </div>
             </main>
         </div>
@@ -39,10 +52,10 @@ export async function getServerSideProps(context){
 
     const session = await getSession(context);
 
-    console.log("session in getServerSideProps", session);
+    // console.log("session in getServerSideProps", session);
 
     const sessionEmail = session.user.email;
-    console.log("sessionEmail: ", sessionEmail);
+    // console.log("session in getServerSideProps / sessionEmail: ", sessionEmail);
 
     if(!session)
         return {
@@ -58,17 +71,23 @@ export async function getServerSideProps(context){
     
     
     const orders = await Promise.all(
-        stripeOrders.docs.map(async (order) => ({
-            id: order.id,
-            // amount: order.data().amount,
-            // amountShipping: order.data().amount_shipping,
-            images: order.data().images,
-            timestamp: moment(order.data().timestamp.toDate()).unix(),
-            items: (
-                await stripe.checkout.sessions.listLineItems(order.id, { limit: 100 })
-            ).data,
-        }))
+        stripeOrders.docs.map(async (order) => (
+                // console.log("ORDER LOGS: ", order.data()),
+            {
+                id: order.id,
+                amount: order.data().amazon_total,
+                amountShipping: order.data().fixedShipping_rate,
+                images: order.data().images,
+                timestamp: moment(order.data().timestamp.toDate()).unix(),
+                items: (
+                    await stripe.checkout.sessions.listLineItems(order.id, { limit: 100 })
+                ).data,
+            }
+        ))
+
+    
     )
+    
 
     return {
         props: {

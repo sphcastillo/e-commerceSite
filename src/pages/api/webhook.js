@@ -30,8 +30,9 @@ const fullfillOrder = async (session) => {
             customer_name: session.customer_details.name,
             customer_email: session.customer_details.email,
             customer_address: session.customer_details.address,
-            total_amount: session.amount_total / 100,
-            shipping_rate_price: session.total_details.amount_shipping / 100,
+            amazon_total: session.amount_subtotal / 100,
+            fixedShipping_rate: session.total_details.amount_shipping / 100,
+            grandTotal_amount: session.amount_total / 100,
             images: JSON.parse(session.metadata.images),
             
         })
